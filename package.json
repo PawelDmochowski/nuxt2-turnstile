@@ -1,0 +1,42 @@
+{
+  "name": "nuxt2-turnstile",
+  "version": "0.1.0",
+  "description": "Cloudflare Turnstile integration for Nuxt 2",
+  "repository": "https://github.com/PawelDmochowski/nuxt2-turnstile.git",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Paweł Dmochowski <pawel@dmochowski.co>"
+    }
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue .",
+    "release": "npm run test && standard-version && git push --follow-tags && npm publish",
+    "test": "npm run lint && jest"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/module-test-utils": "latest",
+    "babel-jest": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt-edge": "latest",
+    "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
